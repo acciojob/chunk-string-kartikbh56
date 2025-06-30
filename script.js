@@ -1,6 +1,9 @@
 function stringChop(str, size) {
   // your code here
 	let res = []
+	if(!str){
+		return res
+	}
 	for(let i=0;i<str.length;i=i+5){
 		res.push(str.slice(i, i+size))
 	}
